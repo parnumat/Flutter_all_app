@@ -14,7 +14,7 @@ class MyApp extends StatefulWidget {
 }
 
 class _MyAppState extends State<MyApp> with SingleTickerProviderStateMixin {
-  int _currentIndex = 0;
+  int _currentIndex = 1;
 
   final List<Widget> tabs = [AboutMe(), AllApp(), ContactMe()];
 
@@ -30,6 +30,7 @@ class _MyAppState extends State<MyApp> with SingleTickerProviderStateMixin {
   @override
   Widget build(BuildContext context) {
     return MaterialApp(
+      debugShowCheckedModeBanner: false,
       title: 'Patrick',
       theme: ThemeData.dark(),
       home: Scaffold(
